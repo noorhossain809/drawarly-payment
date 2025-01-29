@@ -13,22 +13,22 @@ const ProfilePage = () => {
     {
       name: "Jhon Doe",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Lorem Ipsum is simply dummy text.",
     },
     {
       name: "Jhon Doe",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Lorem Ipsum is simply dummy text.",
     },
     {
       name: "Jhon Doe",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Lorem Ipsum is simply dummy text.",
     },
     {
       name: "Jhon Doe",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Lorem Ipsum is simply dummy text.",
     },
   ];
 
@@ -42,7 +42,7 @@ const ProfilePage = () => {
         {/* Left Profile Card */}
         <div className=" py-8 bg-white rounded-lg border border-[#dbdbdb] flex flex-col justify-center items-center space-y-6">
           <div className="">
-            <div className="lg:w-[120px] lg:h-[120px] md:w-[80px] md:h-[80px] w-[60px] h-[60px] bg-[#d9d9d9] rounded-full"></div>
+            <div className="w-[120px] h-[120px] bg-[#d9d9d9]"></div>
           </div>
           <div className="w-full h-auto px-6 flex flex-col justify-center items-center gap-6">
             <div className="w-full flex flex-col justify-center items-center gap-2 font-['Poppins']">
@@ -59,44 +59,25 @@ const ProfilePage = () => {
                 industry.
               </div>
             </div>
-            <div className="flex justify-center items-center gap-4">
-              {/* WhatsApp Icon */}
-              <div className="p-1 bg-[#0083b3] rounded-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-center items-center">
-                <img
-                  src={whatsapp}
-                  alt="WhatsApp"
-                  className="md:w-7 md:h-7 filter invert"
-                />
-              </div>
-
-              {/* Instagram Icon */}
-              <div className="p-1 bg-[#0083b3] rounded-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-center items-center">
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  className="md:w-7 md:h-7 filter invert"
-                />
-              </div>
-
-              {/* Facebook Icon */}
-              <div className="p-1 bg-[#0083b3] rounded-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-center items-center">
-                <img
-                  src={facebook}
-                  alt="Facebook"
-                  className="md:w-7 md:h-7 filter invert"
-                />
-              </div>
-
-              {/* Twitter Icon */}
-              <div className="p-1 bg-[#0083b3] rounded-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-center items-center">
-                <img
-                  src={twieter}
-                  alt="Twitter"
-                  className="md:w-7 md:h-7  filter invert"
-                />
-              </div>
-            </div>
           </div>
+        </div>
+
+        <div className=" p-2 bg-white rounded-lg border text-xs border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries.</p>
+
+            <div className="flex gap-3 mb-2">
+                <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                  <img src={whatsapp} alt="WhatsApp" className="w-8 h-8" />
+                </div>
+                <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                  <img src={call} alt="call" className="w-6 h-6" />
+                </div>
+                
+              </div>
         </div>
 
         {/* About Section */}
@@ -151,11 +132,14 @@ const ProfilePage = () => {
               <p className="text-black text-xs font-normal  leading-tight text-center lg:px-4 px-1 mt-2">
                 {electrician.description}
               </p>
-              <div className="flex lg:gap-4 gap-1 mt-4">
+              <div className="flex lg:gap-4 gap-2 mt-4">
                 <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
-                  <img src={whatsapp} alt="WhatsApp" className="w-5 h-5" />
+                  <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
                 </div>
                 <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                  <img src={call} alt="call" className="w-4 h-4" />
+                </div>
+                {/* <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
                   <img src={instagram} alt="Instagram" className="w-5 h-5" />
                 </div>
                 <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
@@ -163,10 +147,10 @@ const ProfilePage = () => {
                 </div>
                 <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
                   <img src={twieter} alt="Twitter" className="w-5 h-5" />
-                </div>
+                </div> */}
               </div>
               <button className="mt-6 px-8 py-2 bg-[#0083b3] text-white text-sm font-medium font-['Poppins'] rounded-[100px] tracking-tight">
-                Contact
+                More Info
               </button>
             </div>
           ))}

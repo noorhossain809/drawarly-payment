@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img1 from '../../assets/home-product-svg/electricity.svg'
 import img2 from '../../assets/home-product-svg/water-hand.svg'
 import img3 from '../../assets/HomeProudctSvg/hair-dye 1.png'
@@ -82,7 +82,7 @@ const HomeProduct = () => {
 
   return (
     <div className="md:mt-10 pb-10 ">
-      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+      <div className="flex justify-center items-center mb-4 mt-2 md:hidden top-0 bottom-0">
         <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
       </div>
       <div className="">
@@ -115,9 +115,11 @@ const HomeProduct = () => {
         ))}
       </div>
         <div className="flex justify-center items-center my-10">
-          <button className="text-center px-8 py-3 bg-[#0083b3] rounded-md font-['Poppins'] text-white md:text-lg font-medium ">
+          <Link to="verification">
+          <button className="text-center px-8 py-3 bg-[#0083b3] rounded-full font-['Poppins'] text-white md:text-lg font-medium ">
             Technical Worker Registration
           </button>
+          </Link>
         </div>
     </div>
   );

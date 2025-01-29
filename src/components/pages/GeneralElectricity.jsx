@@ -12,14 +12,14 @@ const GeneralElectricity = () => {
 
   const electricians = Array(8).fill({
     name: "Jhon Doe",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description: "Lorem Ipsum is simply dummy text.",
   });
 
   return (
     <div
       className="max-w-7xl mx-auto md:my-16 bg-white"
     >
-      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+      <div className="flex justify-center items-center mb-6 mt-2 md:hidden top-0 bottom-0">
                     <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
                   </div>
       {/* Header Section */}
@@ -44,7 +44,7 @@ const GeneralElectricity = () => {
             className="w-full h-full bg-transparent outline-none text-sm text-black"
           />
         </div>
-        <div className="flex items-center gap-2 text-black md:text-lg font-normal font-['Poppins'] uppercase leading-7 tracking-wide">
+        <div className="flex items-center gap-2 text-black md:text-lg font-normal font-['Poppins'] leading-7 tracking-wide">
           Filter By
           <img
             src={filter}
@@ -57,20 +57,24 @@ const GeneralElectricity = () => {
       <div className="md:hidden">
       <div className="space-y-4 w-full md:px-0 px-6">
         
-        <div className="flex items-center justify-between gap-2 text-black md:text-lg font-normal font-['Poppins'] uppercase leading-7 tracking-wide">
+        <div className="flex items-center justify-between gap-2 text-black md:text-lg font-normal font-['Poppins'] leading-7 tracking-wide">
           
-          <div className="bg-[#0083B3] p-2 rounded-full">
+          <div className="bg-[#0083B3] p-2 rounded-full ">
+         
           <img
             src={arrow}
             alt="arrow"
             className=" w-6 h-6 relative overflow-hidden"
           />
           </div>
+          <div className="flex items-center gap-2 text-sm text-black font-['Poppins'] ">
+          Filter By
           <img
             src={filter}
             alt="Filter"
             className=" w-8 h-8 relative overflow-hidden"
           />
+          </div>
         </div>
         <div
           className=" max-w-md py-3 rounded-full border border-[#b2b2b2] flex items-center px-6"
@@ -92,27 +96,27 @@ const GeneralElectricity = () => {
             onClick={() => navigate("/profilePage")} // Navigate to the same route
             className="py-4 bg-white rounded-lg border border-gray-300 flex flex-col items-center shadow-sm cursor-pointer hover:shadow-md"
           >
-            <div className="lg:w-[111px] lg:h-[111px] md:w-[80px] md:h-[80px] w-[50px] h-[50px] md:mt-6 bg-[#d9d9d9] rounded-full"></div>
+            <div className="lg:w-[111px] lg:h-[111px] md:w-[80px] md:h-[80px] w-[60px] h-[60px] md:mt-6 bg-[#d9d9d9] rounded-full"></div>
             <h3 className="mt-4 text-black text-base font-medium ">
               {electrician.name}
             </h3>
-            <p className="mt-2 text-black text-xs font-normal text-center leading-tight md:px-4">
+            <p className="mt-2 text-black text-xs font-normal text-center leading-tight md:px-4 px-1">
               {electrician.description}
             </p>
             <div className="flex gap-4 mt-4">
-              <div className=" lg:p-2 p-1 bg-white rounded-full shadow-md flex justify-center items-center">
+              <div className=" lg:p-2 p-1 bg-white rounded-full shadow-sm flex justify-center items-center">
                 <img
                   src={whatsapp}
                   alt="WhatsApp"
                   className="w-7 h-7"
                 />
               </div>
-              <div className="lg:p-2 p-1 bg-white rounded-full shadow-md flex justify-center items-center">
+              <div className="lg:p-2 p-1 bg-white rounded-full shadow-sm flex justify-center items-center">
                 <img src={call} alt="Phone" className="w-5 h-5" />
               </div>
             </div>
             <button className="mt-6 px-5 py-1 bg-[#0083b3] text-white text-sm font-medium rounded-[100px]">
-              Contact
+              More Info
             </button>
           </div>
         ))}

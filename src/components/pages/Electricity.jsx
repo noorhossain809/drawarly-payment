@@ -46,7 +46,7 @@ const Electricity = () => {
 
   return (
     <div className="min-h-[90vh] flex flex-col items-center w-full md:my-16 bg-white ">
-      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+      <div className="flex justify-center items-center mb-6 mt-2 md:hidden top-0 bottom-0">
               <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
             </div>
       {/* Header Section */}

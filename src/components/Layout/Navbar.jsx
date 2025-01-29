@@ -134,15 +134,12 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import logo from "../../assets/logo/logo.svg";
 import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Provider Page", href: "provider", current: false },
-  { name: "Blog", href: "blog", current: false },
   { name: "Contact", href: "contact", current: false },
   { name: "About", href: "about", current: false },
 ];
@@ -181,7 +178,7 @@ export default function Header() {
             </div>
             <Link to="verification">
             <button 
-            className="md:block hidden px-8 cursor-pointer py-1 bg-[#0083B3] text-white rounded-md hover:text-white"
+            className="md:block hidden px-8 cursor-pointer py-1 bg-[#0083B3] text-white rounded-full hover:text-white"
             style={{fontFamily: 'Poppins'}}
             >
               
