@@ -1,20 +1,45 @@
-
 import { useNavigate } from "react-router-dom";
-import icon from '../../assets/Electricity, Air conditioning and Elevators/back arrow.svg'
+import arrow from "../../assets/pictures/left-arrow.svg";
+import { useState } from "react";
 
 const VerificationOTP = () => {
   const navigate = useNavigate();
 
+  const [otp, setOtp] = useState(new Array(4).fill(""));
+
+  const handleChange = (element, index) => {
+    if (isNaN(element.value)) return;
+
+    let newOtp = [...otp];
+    newOtp[index] = element.value;
+    setOtp(newOtp);
+
+    // Move to the next input field if the current one is filled
+    if (element.nextSibling && element.value !== "") {
+      element.nextSibling.focus();
+    }
+  };
+
+  const handleKeyDown = (e, index) => {
+    if (e.key === "Backspace" && otp[index] === "") {
+      if (e.target.previousSibling) {
+        e.target.previousSibling.focus();
+      }
+    }
+  };
+
   return (
     <div className="flex justify-center items-center min-h-[90vh] bg-white">
-      <div className="w-[428px] bg-white flex flex-col items-start px-8 py-6 space-y-6 ">
+      <div className=" max-w-3xl mx-auto bg-white flex flex-col items-start px-8 py-6 space-y-6 ">
         {/* Header Section */}
         <div className="flex items-center space-x-4">
           {/* Back Arrow */}
-          <div className="w-[37px] h-[37px] bg-[#0083b3] rounded-full flex justify-center items-center">
+          <div className="bg-[#0083B3] p-2 rounded-full">
             <img
-              src={icon}
-              alt="Back Arrow"
+              src={arrow}
+              alt="arrow"
+              className=" w-5 h-5 relative overflow-hidden cursor-pointer"
+              onClick={() => navigate(-1)}
             />
           </div>
 
@@ -30,37 +55,44 @@ const VerificationOTP = () => {
           mobile number.
         </p>
 
-        {/* Enter OTP Text */}
-        <h2 className="text-[#161616] text-lg font-bold font-['Poppins']">
-          Enter your OTP code here
-        </h2>
+        <div className="space-y-4">
+          {/* Enter OTP Text */}
+          <h2 className="text-[#161616] text-lg font-bold font-['Poppins']">
+            Enter your OTP code here
+          </h2>
 
-        {/* OTP Input */}
-        <div className="flex space-x-4">
-          <div className="w-[60px] h-[60px] bg-[#f3f3f3]/50 rounded-[10px] border border-[#0083b3]"></div>
-          <div className="w-[60px] h-[60px] rounded-[10px] border border-neutral-500"></div>
-          <div className="w-[60px] h-[60px] bg-[#f3f3f3]/50 rounded-[10px] border border-[#0083b3]"></div>
-          <div className="w-[60px] h-[60px] bg-[#f3f3f3]/50 rounded-[10px] border border-[#0083b3]"></div>
-        </div>
-
-        {/* Continue Button */}
-        <div style={{ marginLeft: "-25px" }} className="w-full flex flex-col items-center">
-          <button
-            className="w-[335px] h-14 bg-[#0083b3] rounded-[30px] text-white text-xl font-medium font-['Poppins']"
-            onClick={() => navigate("/verifying")} // Navigate to /verifying
-          >
-            Continue
-          </button>
-
-          {/* Resend Section */}
-          <div className="mt-4 text-center">
-            <p className="text-neutral-500 text-sm font-normal font-['Poppins'] leading-snug">
-              I don’t receive a code
-            </p>
-            <button className="text-[#0083b3] text-base font-semibold font-['Poppins'] leading-snug">
-              RESEND
+          {/* OTP Input */}
+          <div className="flex space-x-4">
+            {otp.map((data, index) => (
+              <input
+                key={index}
+                type="text"
+                maxLength="1"
+                value={data}
+                onChange={(e) => handleChange(e.target, index)}
+                onKeyDown={(e) => handleKeyDown(e, index)}
+                className="w-16 h-16 border-2 border-[#0083b3] text-center text-gray-400 text-xl font-bold rounded focus:outline-none focus:ring-2 focus:ring-[#0083b3]"
+              />
+            ))}
+          </div>
+          <div className="">
+            <button
+              className="px-4 py-2 w-[320px] bg-[#0083b3] max-w-md rounded-full text-white text-xl font-medium font-['Poppins']"
+              onClick={() => navigate("/verifying")} // Navigate to /verifying
+            >
+              Continue
             </button>
           </div>
+        </div>
+
+        {/* Resend Section */}
+        <div className=" space-y-2">
+          <p className="text-neutral-500 text-sm font-normal font-['Poppins']">
+            I don’t receive a code
+          </p>
+          <button className="text-[#0083b3] text-base font-semibold font-['Poppins']">
+            RESEND
+          </button>
         </div>
       </div>
     </div>

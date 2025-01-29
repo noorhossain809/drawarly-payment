@@ -155,7 +155,7 @@ export default function Header() {
   return (
     <Disclosure as="nav" className="bg-white py-2">
       <div className="mx-auto max-w-7xl">
-        <div className="relative flex h-16 items-center justify-between md:mx-0 mx-6">
+        <div className="relative flex h-16 items-center justify-between lg:mx-0 mx-6 lg:px-4">
           <div className="flex md:flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className=" hidden md:block shrink-0 items-center">
               <Link to="/">

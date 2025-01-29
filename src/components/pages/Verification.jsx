@@ -1,18 +1,20 @@
-
 import { useNavigate } from "react-router-dom";
+import arrow from "../../assets/pictures/left-arrow.svg";
 
 const Verification = () => {
   const navigate = useNavigate(); // Hook for navigation
 
   return (
-    <div className="flex flex-col justify-center items-start w-full max-w-md mx-auto min-h-[90vh] p-6 font-['Poppins'] ">
+    <div className="flex flex-col justify-center items-start w-full max-w-md mx-auto md:min-h-[90vh] min-h-[50vh] p-6 font-['Poppins'] ">
       {/* Back Button */}
       <div className="flex items-center gap-4 mb-6">
-        <div
-          className="w-10 h-10 bg-[#0083b3] rounded-full flex items-center justify-center cursor-pointer"
-          onClick={() => navigate(-1)} // Navigate back to the previous page
-        >
-          <span className="text-white">&larr;</span>
+        <div className="bg-[#0083B3] p-2 rounded-full">
+          <img
+            src={arrow}
+            alt="arrow"
+            className=" w-5 h-5 relative overflow-hidden cursor-pointer"
+            onClick={() => navigate(-1)}
+          />
         </div>
         <h1 className="text-xl  font-semibold text-[#2c2e33]">Verification</h1>
       </div>

@@ -1,17 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import img1 from '../../assets/HomeProudctSvg/healthicons_electricity-outline (2).svg'
-import img2 from '../../assets/HomeProudctSvg/healthicons_water-sanitation-outline.png'
+import img1 from '../../assets/home-product-svg/electricity.svg'
+import img2 from '../../assets/home-product-svg/water-hand.svg'
 import img3 from '../../assets/HomeProudctSvg/hair-dye 1.png'
-import img4 from '../../assets/HomeProudctSvg/renovation 1.png'
-import img5 from '../../assets/HomeProudctSvg/sanitizer 1.png'
-import img6 from '../../assets/HomeProudctSvg/ant-design_car-outlined.png'
-import img7 from '../../assets/HomeProudctSvg/printer 1.png'
-import img8 from '../../assets/HomeProudctSvg/facial-treatment 1.png'
-import img9 from '../../assets/HomeProudctSvg/map_furniture-store.png'
-import img10 from '../../assets/HomeProudctSvg/blacksmith 1.png'
-import img11 from '../../assets/HomeProudctSvg/arch 1.png'
-import img12 from '../../assets/HomeProudctSvg/livestock 1.png'
+import img4 from '../../assets/home-product-svg/renovation-home.svg'
+import img5 from '../../assets/home-product-svg/material-symbols-light_pest-control.svg'
+import img6 from '../../assets/home-product-svg/car.svg'
+import img7 from '../../assets/home-product-svg/printer.svg'
+import img8 from '../../assets/home-product-svg/facial-treatment.svg'
+import img9 from '../../assets/home-product-svg/furniture.svg'
+import img10 from '../../assets/home-product-svg/blacksmith.svg'
+import img11 from '../../assets/home-product-svg/wedding.svg'
+import img12 from '../../assets/home-product-svg/livestock.svg'
 
 const HomeProduct = () => {
   const navigate = useNavigate();
@@ -88,22 +88,23 @@ const HomeProduct = () => {
           Our Categories
         </div>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-[20px] md:mt-10 max-w-7xl md:mx-auto mx-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-[20px] md:gap-4 gap-2 md:mt-10 max-w-7xl lg:mx-auto md:mx-6 px-4 lg:px-4">
       
         {products.map((product, index) => (
           <div
             key={index}
             onClick={() => navigate(product.route)}
-            className="py-2 md:py-6 rounded-xl border-2 px-6 w-full flex flex-col items-center justify-center text-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
+            className="py-2 md:py-6 rounded-lg border-1 lg:px-6 md:px-4 px-2 w-full flex md:flex-col gap-2 items-center md:justify-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
           >
-            <div className="w-16 h-16 mb-4 rounded-full flex justify-center items-center">
+            <div className="lg:w-16 lg:h-14 w-12 h-10 lg:mb-4 flex md:justify-center md:items-center">
               <img
                 src={product.icon}
                 alt={product.text}
-                className="w-full h-full object-cover rounded-full group-hover:filter group-hover:brightness-0 group-hover:invert"
+                className=" lg:object-cover group-hover:filter group-hover:brightness-0 group-hover:invert"
               />
+             
             </div>
-            <div className="text-base font-semibold font-['Poppins'] text-[#3a4e39] group-hover:text-white">
+            <div className="md:text-base text-xs font-semibold md:text-center font-['Poppins'] text-[#3a4e39] group-hover:text-white">
               {product.text}
             </div>
           </div>
