@@ -12,6 +12,7 @@ import img9 from '../../assets/home-product-svg/furniture.svg'
 import img10 from '../../assets/home-product-svg/blacksmith.svg'
 import img11 from '../../assets/home-product-svg/wedding.svg'
 import img12 from '../../assets/home-product-svg/livestock.svg'
+import mobileLogo from '../../assets/logo/mobile-logo-2.svg'
 
 const HomeProduct = () => {
   const navigate = useNavigate();
@@ -81,6 +82,9 @@ const HomeProduct = () => {
 
   return (
     <div className="md:mt-10 pb-10 ">
+      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+        <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
+      </div>
       <div className="">
       <div className=" text-[#0083b3] text-center pb-6 text-[18px] font-['Poppins'] font-bold  uppercase md:hidden"
         
@@ -94,7 +98,7 @@ const HomeProduct = () => {
           <div
             key={index}
             onClick={() => navigate(product.route)}
-            className="py-2 md:py-6 rounded-lg border-1 lg:px-6 md:px-4 px-2 w-full flex md:flex-col gap-2 items-center md:justify-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
+            className="py-8 md:py-6 rounded-lg border-1 lg:px-6 md:px-4 px-2 w-full flex md:flex-col gap-2 items-center md:justify-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
           >
             <div className="lg:w-16 lg:h-14 w-12 h-10 lg:mb-4 flex md:justify-center md:items-center">
               <img

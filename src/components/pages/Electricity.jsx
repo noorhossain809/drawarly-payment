@@ -6,6 +6,7 @@ import img3 from '../../assets/home-product-svg/sub-categories/air-conditioner.s
 import img4 from '../../assets/home-product-svg/sub-categories/air-conditioner 2.svg'
 import img5 from '../../assets/home-product-svg/sub-categories/elevator.svg'
 import img6 from '../../assets/home-product-svg/sub-categories/exchange.svg'
+import mobileLogo from '../../assets/logo/mobile-logo-2.svg'
 
 const Electricity = () => {
   const navigate = useNavigate();
@@ -44,7 +45,10 @@ const Electricity = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full md:my-16 bg-white ">
+    <div className="min-h-[90vh] flex flex-col items-center w-full md:my-16 bg-white ">
+      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+              <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
+            </div>
       {/* Header Section */}
       <div className="text-center mb-10">
         <div className="text-[#0083b3] md:block hidden text-2xl font-normal font-['Poppins'] uppercase leading-5 tracking-[4.76px]">
@@ -61,7 +65,7 @@ const Electricity = () => {
           <div
             key={index}
             onClick={() => navigate(category.route)} // Navigate to route
-            className="py-4 md:py-6 rounded-xl border-2 lg:px-6 md:px-4 px-2 w-full flex md:flex-col gap-2 items-center md:justify-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
+            className="py-6 rounded-xl border-2 lg:px-6 md:px-4 px-2 w-full flex md:flex-col gap-2 items-center md:justify-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
           >
             <div className="lg:mb-6 rounded-full flex lg:items-center lg:justify-center justify-start">
               <img

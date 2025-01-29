@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Home />, // Home is the default component
       },
       {
-        path: '/signUP',
+        path: '/signup',
         element:<SignUp></SignUp>, // Home is the default component
       },
       {

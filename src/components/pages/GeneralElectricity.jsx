@@ -4,6 +4,7 @@ import call from '../../assets/pictures/call.svg'
 import whatsapp from '../../assets/pictures/whatsapp.svg'
 import filter from '../../assets/pictures/filter.svg'
 import arrow from '../../assets/pictures/left-arrow.svg'
+import mobileLogo from '../../assets/logo/mobile-logo-2.svg'
 
 
 const GeneralElectricity = () => {
@@ -18,6 +19,9 @@ const GeneralElectricity = () => {
     <div
       className="max-w-7xl mx-auto md:my-16 bg-white"
     >
+      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+                    <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
+                  </div>
       {/* Header Section */}
       <div className="text-center md:block hidden">
         <div className="w-full text-[#0083b3] text-lg font-normal font-['Poppins'] uppercase leading-5 tracking-wide">

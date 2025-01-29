@@ -30,7 +30,7 @@ const VerificationOTP = () => {
 
   return (
     <div className="flex justify-center items-center min-h-[90vh] bg-white">
-      <div className=" max-w-3xl mx-auto bg-white flex flex-col items-start px-8 py-6 space-y-6 ">
+      <div className=" max-w-3xl mx-auto bg-white flex flex-col px-8 py-6 space-y-2 ">
         {/* Header Section */}
         <div className="flex items-center space-x-4">
           {/* Back Arrow */}
@@ -50,7 +50,7 @@ const VerificationOTP = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-neutral-500 text-sm font-normal font-['Poppins'] leading-snug">
+        <p className="text-neutral-500 mt-2 text-sm font-normal font-['Poppins'] leading-snug">
           We send you a code to verify your <br />
           mobile number.
         </p>
@@ -77,7 +77,7 @@ const VerificationOTP = () => {
           </div>
           <div className="">
             <button
-              className="px-4 py-2 w-[320px] bg-[#0083b3] max-w-md rounded-full text-white text-xl font-medium font-['Poppins']"
+              className="px-4 py-2 w-[310px] bg-[#0083b3] rounded-full text-white text-xl font-medium font-['Poppins']"
               onClick={() => navigate("/verifying")} // Navigate to /verifying
             >
               Continue
@@ -86,14 +86,12 @@ const VerificationOTP = () => {
         </div>
 
         {/* Resend Section */}
-        <div className=" space-y-2">
-          <p className="text-neutral-500 text-sm font-normal font-['Poppins']">
+          <p className="text-neutral-500 text-sm font-normal text-center font-['Poppins']">
             I don’t receive a code
           </p>
           <button className="text-[#0083b3] text-base font-semibold font-['Poppins']">
             RESEND
           </button>
-        </div>
       </div>
     </div>
   );

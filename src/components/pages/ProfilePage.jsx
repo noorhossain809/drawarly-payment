@@ -1,34 +1,42 @@
 import React from "react";
-import call from '../../assets/pictures/call.svg'
-import mail from '../../assets/pictures/mail.svg'
-import whatsapp from '../../assets/pictures/whatsapp.svg'
-import instagram from '../../assets/pictures/instragram.svg'
-import facebook from '../../assets/pictures/facebok.svg'
-import twieter from '../../assets/pictures/twitter.svg'
-import youtube from '../../assets/pictures/youtube.svg'
+import call from "../../assets/pictures/call.svg";
+import mail from "../../assets/pictures/mail.svg";
+import whatsapp from "../../assets/pictures/whatsapp.svg";
+import instagram from "../../assets/pictures/instragram.svg";
+import facebook from "../../assets/pictures/facebok.svg";
+import twieter from "../../assets/pictures/twitter.svg";
+import youtube from "../../assets/pictures/youtube.svg";
+import mobileLogo from "../../assets/logo/mobile-logo-2.svg";
 
 const ProfilePage = () => {
   const electricians = [
     {
       name: "Jhon Doe",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       name: "Jhon Doe",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       name: "Jhon Doe",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       name: "Jhon Doe",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
   return (
     <div className=" bg-white md:mt-16 max-w-7xl mx-auto">
+      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+        <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
+      </div>
       {/* Section 1 */}
       <div className=" bg-white flex flex-col lg:flex-row justify-center items-center lg:gap-8 gap-4 mx-4">
         {/* Left Profile Card */}
@@ -47,7 +55,8 @@ const ProfilePage = () => {
                 </div>
               </div>
               <div className="w-[257px] text-center text-black text-xs font-normal  leading-tight">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </div>
             </div>
             <div className="flex justify-center items-center gap-4">
@@ -96,22 +105,25 @@ const ProfilePage = () => {
             About Jon Doe
           </div>
           <div className=" mt-[20px] text-justify text-black text-sm md:text-lg font-normal  md:leading-[30px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has
-            survived not only five centuries.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries.
             <br />
             <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has
-            survived not only five centuries.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries.
             <br />
             <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has
-            survived not only five centuries.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries.
           </div>
         </div>
       </div>

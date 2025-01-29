@@ -6,7 +6,7 @@ import BottomNavbar from './MobileNavbar';
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="min-h-screen">
       {/* Navbar at the top */}
       <Navbar />
 

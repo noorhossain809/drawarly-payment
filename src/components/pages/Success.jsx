@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Success = () => {
+  const navigate = useNavigate(); // React Router navigation
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/signup"); // Redirect to the signup page after 3 seconds
+    }, 3000);
+
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, [navigate]);
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center">
+    <div className="flex flex-col items-center justify-center min-h-[90vh] text-center">
     <div className="p-6 bg-white rounded-lg shadow-md md:mx-0 mx-6">
       <h1 className="text-3xl font-bold text-[#0083B3]">Success!</h1>
       <div className="my-4">
