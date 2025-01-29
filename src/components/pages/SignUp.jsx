@@ -21,17 +21,17 @@ const Signup = () => {
   };
 
   return (
-    <div style={{ marginBottom: "120px" }} className="flex justify-center items-center mt-16">
-      <div className="w-[360px]">
-        <h2 className="text-[#0f1728] text-3xl font-normal font-['Inter'] leading-[38px] mb-6">
+    <div className="max-w-7xl lg:mx-auto md:mx-6 mx-4 md:my-16 ">
+      <div className="md:mb-0 mb-24">
+        <h2 className="text-[#0f1728] text-3xl text-center font-normal font-['Poppins'] leading-[38px] mb-6">
           Create an account
         </h2>
-        <div className="space-y-6">
+        <div className="max-w-md mx-auto space-y-6">
           {/* Full Name */}
           <div>
             <label
               htmlFor="fullName"
-              className="block text-[#344053] text-sm font-medium font-['Inter'] leading-tight"
+              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
             >
               Name or Trade Name*
             </label>
@@ -39,7 +39,7 @@ const Signup = () => {
               id="fullName"
               type="text"
               placeholder="Enter your full name"
-              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Inter'] leading-normal shadow-sm"
+              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Poppins'] leading-normal shadow-sm"
             />
           </div>
 
@@ -47,7 +47,7 @@ const Signup = () => {
           <div>
             <label
               htmlFor="phone"
-              className="block text-[#344053] text-sm font-medium font-['Inter'] leading-tight"
+              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
             >
               Phone*
             </label>
@@ -55,7 +55,7 @@ const Signup = () => {
               id="phone"
               type="text"
               placeholder="Enter your phone"
-              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Inter'] leading-normal shadow-sm"
+              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Poppins'] leading-normal shadow-sm"
             />
           </div>
 
@@ -63,13 +63,13 @@ const Signup = () => {
           <div>
             <label
               htmlFor="section"
-              className="block text-[#344053] text-sm font-medium font-['Inter'] leading-tight"
+              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
             >
               Choose the section*
             </label>
             <select
               id="section"
-              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Inter'] leading-normal shadow-sm"
+              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Poppins'] leading-normal shadow-sm"
             >
               <option value="">Choose</option>
             </select>
@@ -79,13 +79,13 @@ const Signup = () => {
           <div>
             <label
               htmlFor="categories"
-              className="block text-[#344053] text-sm font-medium font-['Inter'] leading-tight"
+              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
             >
               Categories*
             </label>
             <select
               id="categories"
-              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Inter'] leading-normal shadow-sm"
+              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Poppins'] leading-normal shadow-sm"
             >
               <option value="">Select category</option>
             </select>
@@ -95,13 +95,13 @@ const Signup = () => {
           <div>
             <label
               htmlFor="provinces"
-              className="block text-[#344053] text-sm font-medium font-['Inter'] leading-tight"
+              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
             >
               Provinces*
             </label>
             <select
               id="provinces"
-              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Inter'] leading-normal shadow-sm"
+              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Poppins'] leading-normal shadow-sm"
             >
               <option value="">Select Provinces</option>
             </select>
@@ -134,7 +134,7 @@ const Signup = () => {
                 ></path>
               </svg>
             </div>
-            <label className="text-[#475466] text-sm font-medium font-['Inter'] leading-tight">
+            <label className="text-[#475466] text-sm font-medium font-['Poppins'] leading-tight">
               Governorate
             </label>
           </div>
@@ -164,11 +164,11 @@ const Signup = () => {
                 ></path>
               </svg>
             </div>
-            <label className="text-[#475466] text-sm font-medium font-['Inter'] leading-tight">
+            <label className="text-[#475466] text-sm font-medium font-['Poppins'] leading-tight">
               Agree to{" "}
               <a
                 href="#"
-                className="underline text-[#475466] font-medium font-['Inter']"
+                className="underline text-[#475466] font-medium font-['Poppins']"
               >
                 terms & Conditions
               </a>
@@ -178,7 +178,7 @@ const Signup = () => {
           {/* Submit Button */}
           <button
             onClick={handleRegistration}
-            className="w-full px-4 py-2 bg-[#0083b3] text-white rounded-lg text-base font-semibold font-['Inter'] leading-normal"
+            className="w-full px-4 py-2 bg-[#0083b3] text-white rounded-lg text-base font-semibold font-['Poppins'] leading-normal"
           >
             Registration
           </button>
