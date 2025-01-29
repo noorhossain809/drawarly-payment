@@ -62,7 +62,8 @@ const ProfilePage = () => {
           </div>
         </div>
 
-        <div className=" p-2 bg-white rounded-lg border text-xs border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
+       <div className="md:hidden block">
+       <div className=" p-2 bg-white rounded-lg border text-xs border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -79,6 +80,7 @@ const ProfilePage = () => {
                 
               </div>
         </div>
+       </div>
 
         {/* About Section */}
         <div className="w-full mt-10 px-4 md:px-0 font-['Poppins']">
