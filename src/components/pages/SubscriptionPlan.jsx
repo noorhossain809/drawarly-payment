@@ -1,11 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import mobileLogo from "../../assets/logo/mobile-logo-2.svg";
 
 const SubscriptionPlan = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="h-screen">
+      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+                                <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
+                              </div>
+      <div className="flex justify-center items-center">
+      
       <div className="w-[428px] p-6">
         {/* Header */}
         <div className="mb-8"></div>
@@ -65,6 +71,7 @@ const SubscriptionPlan = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

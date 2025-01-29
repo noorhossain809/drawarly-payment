@@ -6,12 +6,12 @@ import BottomNavbar from './MobileNavbar';
 
 const MainLayout = () => {
   return (
-    <div className="min-h-screen">
+    <div className="">
       {/* Navbar at the top */}
       <Navbar />
 
       {/* Main content area should grow to fill available space */}
-      <main className="flex-grow ">
+      <main className="">
         <Outlet />
       </main>
 

@@ -153,7 +153,7 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-white md:py-2 py-0">
+    <Disclosure as="nav" className="bg-white md:py-2 py-0 hidden md:block">
       <div className="mx-auto max-w-7xl">
         <div className="relative flex h-16 items-center justify-between lg:mx-0 mx-6 lg:px-4">
           <div className="flex md:flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -181,7 +181,7 @@ export default function Header() {
             </div>
             <Link to="verification">
             <button 
-            className="md:block hidden px-6 cursor-pointer py-1 bg-[#0083B3] text-white rounded-md hover:text-white"
+            className="md:block hidden px-8 cursor-pointer py-1 bg-[#0083B3] text-white rounded-md hover:text-white"
             style={{fontFamily: 'Poppins'}}
             >
               

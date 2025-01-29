@@ -21,7 +21,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="max-w-7xl lg:mx-auto md:mx-6 mx-4 md:my-16 ">
+    <div className="max-w-7xl lg:mx-auto md:mx-6 mx-4 py-16 ">
       <div className="md:mb-0 mb-24">
         <h2 className="text-[#0f1728] text-3xl text-center font-normal font-['Poppins'] leading-[38px] mb-6">
           Create an account

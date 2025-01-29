@@ -60,12 +60,12 @@ const Electricity = () => {
       </div>
 
       {/* Subcategories Section */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-5 gap-2 max-w-7xl lg:mx-auto md:mx-6 mx-2 lg:px-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-[20px] md:gap-4 gap-2 md:mt-10 max-w-7xl lg:mx-auto md:mx-6 px-2 lg:px-4">
         {subCategories.map((category, index) => (
           <div
             key={index}
             onClick={() => navigate(category.route)} // Navigate to route
-            className="py-6 rounded-xl border-2 lg:px-6 md:px-4 px-2 w-full flex md:flex-col gap-2 items-center md:justify-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
+            className=" py-6 rounded-xl border-1 lg:px-6 md:px-4 px-2 w-full flex md:flex-col gap-2 items-center md:justify-center transition-all cursor-pointer border-[#0083b3] hover:bg-[#0083b3] group"
           >
             <div className="lg:mb-6 rounded-full flex lg:items-center lg:justify-center justify-start">
               <img
