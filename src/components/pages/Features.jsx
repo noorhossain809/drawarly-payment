@@ -1,7 +1,7 @@
 
 const Features = () => {
   return (
-    <div className="max-w-7xl lg:mx-auto my-10 mx-10 lg:px-4 py-10 hidden md:block">
+    <div className="max-w-7xl lg:mx-auto my-10 mx-10 lg:px-4 py-10 hidden lg:block">
       <div className="md:flex justify-between space-y-6">
         {/* Left Section */}
       <div className="space-y-6">

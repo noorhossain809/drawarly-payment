@@ -17,9 +17,9 @@ const GeneralElectricity = () => {
 
   return (
     <div
-      className="max-w-7xl mx-auto md:my-16 bg-white"
+      className="max-w-7xl mx-auto lg:my-16 bg-white"
     >
-      <div className="flex justify-center items-center mb-6 mt-2 md:hidden top-0 bottom-0">
+      <div className="flex justify-center items-center mb-6 mt-2 lg:hidden top-0 bottom-0">
                     <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
                   </div>
       {/* Header Section */}
@@ -34,7 +34,7 @@ const GeneralElectricity = () => {
 
       {/* Search and Filter Section */}
       <div className="md:block hidden ">
-      <div className="flex justify-between items-center w-full md:mt-8 px-6">
+      <div className="flex justify-between items-center w-full md:mt-8 lg:px-6 px-10">
         <div
           className="md:w-[367px] max-w-md py-3 rounded-full border border-[#b2b2b2] flex items-center px-6"
         >

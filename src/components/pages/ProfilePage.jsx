@@ -34,7 +34,7 @@ const ProfilePage = () => {
 
   return (
     <div className=" bg-white md:mt-16 max-w-7xl mx-auto">
-      <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
+      <div className="flex justify-center items-center mt-2 mb-10 md:hidden top-0 bottom-0">
         <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
       </div>
       {/* Section 1 */}
@@ -63,7 +63,7 @@ const ProfilePage = () => {
         </div>
 
        <div className="md:hidden block">
-       <div className=" p-2 bg-white rounded-lg border text-xs border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
+       <div className=" p-2 bg-white rounded-lg border text-sm border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -71,11 +71,11 @@ const ProfilePage = () => {
             only five centuries.</p>
 
             <div className="flex gap-3 mb-2">
-                <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
-                  <img src={whatsapp} alt="WhatsApp" className="w-8 h-8" />
+            <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                  <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
                 </div>
                 <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
-                  <img src={call} alt="call" className="w-6 h-6" />
+                  <img src={call} alt="call" className="w-4 h-4" />
                 </div>
                 
               </div>

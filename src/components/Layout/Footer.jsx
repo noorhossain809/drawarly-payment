@@ -12,7 +12,7 @@ import youtube from '../../assets/pictures/youtube.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-10 px-6 font-['Poppins'] hidden md:block">
+    <footer className="bg-white border-t border-gray-200 py-10 px-6 font-['Poppins'] hidden lg:block">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-6 space-y-6">
         {/* Left Section */}
         <div className=" ">

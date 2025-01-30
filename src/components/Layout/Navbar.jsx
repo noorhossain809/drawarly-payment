@@ -150,7 +150,7 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-white md:py-2 py-0 hidden md:block">
+    <Disclosure as="nav" className="bg-white md:py-2 py-0 hidden lg:block">
       <div className="mx-auto max-w-7xl">
         <div className="relative flex h-16 items-center justify-between lg:mx-0 mx-6 lg:px-4">
           <div className="flex md:flex-1 items-center justify-center sm:items-stretch sm:justify-start">

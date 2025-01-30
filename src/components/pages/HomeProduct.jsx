@@ -81,12 +81,12 @@ const HomeProduct = () => {
   ];
 
   return (
-    <div className="md:mt-10 pb-10 ">
-      <div className="flex justify-center items-center mb-4 mt-2 md:hidden top-0 bottom-0">
+    <div className="lg:mt-10 pb-10 ">
+      <div className="flex justify-center items-center mb-4 mt-2 lg:hidden top-0 bottom-0">
         <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
       </div>
       <div className="">
-      <div className=" text-[#0083b3] text-center pb-6 text-[18px] font-['Poppins'] font-bold  uppercase md:hidden"
+      <div className=" text-[#0083b3] text-center pb-4 text-[18px] font-['Poppins'] font-bold  uppercase lg:hidden"
         
         >
           Our Categories

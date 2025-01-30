@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import img1 from '../../assets/home-product-svg/sub-categories/Group.svg'
 import img2 from '../../assets/home-product-svg/sub-categories/electrical.svg'
@@ -45,8 +44,8 @@ const Electricity = () => {
   ];
 
   return (
-    <div className="min-h-[90vh] flex flex-col items-center w-full md:my-16 bg-white ">
-      <div className="flex justify-center items-center mb-6 mt-2 md:hidden top-0 bottom-0">
+    <div className="min-h-[90vh] flex flex-col items-center w-full lg:my-16 bg-white ">
+      <div className="flex justify-center items-center mb-6 mt-2 lg:hidden top-0 bottom-0">
               <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
             </div>
       {/* Header Section */}
@@ -54,7 +53,7 @@ const Electricity = () => {
         <div className="text-[#0083b3] md:block hidden text-2xl font-normal font-['Poppins'] uppercase leading-5 tracking-[4.76px]">
           Sub Categories
         </div>
-        <div className="lg:mt-4 text-[#2c2e33] md:text-4xl text-xl md:px-0 px-4 font-semibold font-['Poppins'] md:leading-[50px]">
+        <div className="lg:mt-4 text-[#2c2e33] lg:text-4xl md:text-2xl text-xl md:px-0 px-4 font-semibold font-['Poppins'] md:leading-[50px]">
           Electricity, Air conditioning and Elevators
         </div>
       </div>
