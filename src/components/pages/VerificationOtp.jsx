@@ -86,12 +86,12 @@ const VerificationOTP = () => {
         </div>
 
         {/* Resend Section */}
-          <p className="text-neutral-500 text-sm font-normal text-center font-['Poppins']">
-            I don’t receive a code
-          </p>
-          <button className="text-[#0083b3] text-base font-semibold font-['Poppins']">
-            RESEND
-          </button>
+        <p className="text-neutral-500 text-sm font-normal text-center font-['Poppins']">
+          I don’t receive a code
+        </p>
+        <button className="text-[#0083b3] text-base font-semibold font-['Poppins']">
+          RESEND
+        </button>
       </div>
     </div>
   );

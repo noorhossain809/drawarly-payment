@@ -1,7 +1,21 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Upload } from "lucide-react";
+import avator from "../../assets/avator/unsplash_SE4Xc1WvIkU.png";
 
 const Signup = () => {
+  const [imageSrc, setImageSrc] = useState(null);
+
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setImageSrc(reader.result); // Set the uploaded image URL
+      };
+      reader.readAsDataURL(file);
+    }
+  };
   const [isChecked, setIsChecked] = useState({
     governorate: false,
     terms: false,
@@ -17,7 +31,7 @@ const Signup = () => {
   };
 
   const handleRegistration = () => {
-    navigate("/verification");
+    navigate("/registration-success");
   };
 
   return (
@@ -31,7 +45,7 @@ const Signup = () => {
           <div>
             <label
               htmlFor="fullName"
-              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
+              className="block text-[#344053] mb-1 text-sm font-medium font-['Poppins'] leading-tight"
             >
               Name or Trade Name*
             </label>
@@ -47,7 +61,7 @@ const Signup = () => {
           <div>
             <label
               htmlFor="phone"
-              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
+              className="block text-[#344053] mb-1 text-sm font-medium font-['Poppins'] leading-tight"
             >
               Phone*
             </label>
@@ -55,15 +69,48 @@ const Signup = () => {
               id="phone"
               type="text"
               placeholder="Enter your phone"
-              className="w-full px-4 py-2 bg-white border border-[#cfd4dc] rounded-lg text-[#667084] text-base font-normal font-['Poppins'] leading-normal shadow-sm"
+              className="w-full px-4 py-2 border rounded-lg text-[#667084] text-base font-normal font-['Poppins'] leading-normal shadow-sm"
             />
+          </div>
+
+          <div className="flex items-center space-x-4">
+            {/* Avatar or Uploaded Image */}
+            <div>
+              {imageSrc ? (
+                <img
+                  src={imageSrc}
+                  alt="Uploaded"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+              ) : (
+                <img
+                  src={avator} // Default avatar placeholder
+                  alt="Avatar"
+                  className="w-12 h-12 rounded-full"
+                />
+              )}
+            </div>
+
+            {/* File Input */}
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <Upload className="w-5 h-5 text-blue-500" />
+              <span className="text-sm font-medium text-black">
+                Upload Advertising image
+              </span>
+              <input
+                type="file"
+                className="hidden"
+                accept="image/*"
+                onChange={handleImageUpload}
+              />
+            </label>
           </div>
 
           {/* Section */}
           <div>
             <label
               htmlFor="section"
-              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
+              className="block text-[#344053] mb-1 text-sm font-medium font-['Poppins'] leading-tight"
             >
               Choose the section*
             </label>
@@ -79,7 +126,7 @@ const Signup = () => {
           <div>
             <label
               htmlFor="categories"
-              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
+              className="block text-[#344053] mb-1 text-sm font-medium font-['Poppins'] leading-tight"
             >
               Categories*
             </label>
@@ -95,7 +142,7 @@ const Signup = () => {
           <div>
             <label
               htmlFor="provinces"
-              className="block text-[#344053] text-sm font-medium font-['Poppins'] leading-tight"
+              className="block text-[#344053] mb-1 text-sm font-medium font-['Poppins'] leading-tight"
             >
               Provinces*
             </label>

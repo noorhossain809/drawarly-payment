@@ -12,23 +12,19 @@ const ProfilePage = () => {
   const electricians = [
     {
       name: "Jhon Doe",
-      description:
-        "Lorem Ipsum is simply dummy text.",
+      description: "Lorem Ipsum is simply dummy text.",
     },
     {
       name: "Jhon Doe",
-      description:
-        "Lorem Ipsum is simply dummy text.",
+      description: "Lorem Ipsum is simply dummy text.",
     },
     {
       name: "Jhon Doe",
-      description:
-        "Lorem Ipsum is simply dummy text.",
+      description: "Lorem Ipsum is simply dummy text.",
     },
     {
       name: "Jhon Doe",
-      description:
-        "Lorem Ipsum is simply dummy text.",
+      description: "Lorem Ipsum is simply dummy text.",
     },
   ];
 
@@ -62,25 +58,26 @@ const ProfilePage = () => {
           </div>
         </div>
 
-       <div className="md:hidden block">
-       <div className=" p-2 bg-white rounded-lg border text-sm border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries.</p>
+        <div className="md:hidden block">
+          <div className=" p-2 bg-white rounded-lg border text-sm border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries.
+            </p>
 
             <div className="flex gap-3 mb-2">
-            <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
-                  <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
-                </div>
-                <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
-                  <img src={call} alt="call" className="w-4 h-4" />
-                </div>
-                
+              <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
               </div>
+              <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                <img src={call} alt="call" className="w-4 h-4" />
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
 
         {/* About Section */}
         <div className="w-full mt-10 px-4 md:px-0 font-['Poppins']">

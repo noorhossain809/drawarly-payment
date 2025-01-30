@@ -10,12 +10,12 @@ const BottomNavbar = () => {
       <div className="flex justify-around items-center h-16">
         {/* Icon 1 */}
         <div className="hover:bg-[#0083B3] p-2 rounded-full group flex items-center">
-          <Link to='/verification'>
-          <img
-            src={edit}
-            alt="edit"
-            className="w-7 h-7 group-hover:filter group-hover:brightness-0 group-hover:invert "
-          />
+          <Link to="/verification">
+            <img
+              src={edit}
+              alt="edit"
+              className="w-7 h-7 group-hover:filter group-hover:brightness-0 group-hover:invert "
+            />
           </Link>
         </div>
 
@@ -30,12 +30,12 @@ const BottomNavbar = () => {
 
         {/* Icon 3 */}
         <div className="hover:bg-[#0083B3] p-2 rounded-full group">
-          <Link to='/profile'>
-          <img
-            src={profile}
-            alt="profile"
-            className="w-7 h-7 object-cover group-hover:filter group-hover:brightness-0 group-hover:invert"
-          />
+          <Link to="/profile">
+            <img
+              src={profile}
+              alt="profile"
+              className="w-7 h-7 object-cover group-hover:filter group-hover:brightness-0 group-hover:invert"
+            />
           </Link>
         </div>
 
@@ -43,11 +43,11 @@ const BottomNavbar = () => {
 
         <div className="hover:bg-[#0083B3] p-2 rounded-full group">
           <Link to="/">
-          <img
-            src={home}
-            alt="home"
-            className="w-7 h-7 object-cover group-hover:filter group-hover:brightness-0 group-hover:invert"
-          />
+            <img
+              src={home}
+              alt="home"
+              className="w-7 h-7 object-cover group-hover:filter group-hover:brightness-0 group-hover:invert"
+            />
           </Link>
         </div>
       </div>

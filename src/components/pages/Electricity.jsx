@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import img1 from '../../assets/home-product-svg/sub-categories/Group.svg'
-import img2 from '../../assets/home-product-svg/sub-categories/electrical.svg'
-import img3 from '../../assets/home-product-svg/sub-categories/air-conditioner.svg'
-import img4 from '../../assets/home-product-svg/sub-categories/air-conditioner 2.svg'
-import img5 from '../../assets/home-product-svg/sub-categories/elevator.svg'
-import img6 from '../../assets/home-product-svg/sub-categories/exchange.svg'
-import mobileLogo from '../../assets/logo/mobile-logo-2.svg'
+import img1 from "../../assets/home-product-svg/sub-categories/Group.svg";
+import img2 from "../../assets/home-product-svg/sub-categories/electrical.svg";
+import img3 from "../../assets/home-product-svg/sub-categories/air-conditioner.svg";
+import img4 from "../../assets/home-product-svg/sub-categories/air-conditioner 2.svg";
+import img5 from "../../assets/home-product-svg/sub-categories/elevator.svg";
+import img6 from "../../assets/home-product-svg/sub-categories/exchange.svg";
+import mobileLogo from "../../assets/logo/mobile-logo-2.svg";
 
 const Electricity = () => {
   const navigate = useNavigate();
@@ -19,35 +19,35 @@ const Electricity = () => {
     {
       title: "Electrical appliances repair",
       route: "/generalElectricity",
-      icon: img2 // Replace with actual path
+      icon: img2, // Replace with actual path
     },
     {
       title: "Central air conditioning maintenance",
       route: "/generalElectricity",
-      icon: img3 // Replace with actual path
+      icon: img3, // Replace with actual path
     },
     {
       title: "Unit air conditioning maintenance",
       route: "/generalElectricity",
-      icon: img4
+      icon: img4,
     },
     {
       title: "Elevator maintenance",
       route: "/generalElectricity",
-      icon: img5 // Replace with actual path
+      icon: img5, // Replace with actual path
     },
     {
       title: "Buying and selling used appliances",
       route: "/generalElectricity",
-      icon: img6 // Replace with actual path
+      icon: img6, // Replace with actual path
     },
   ];
 
   return (
     <div className="min-h-[90vh] flex flex-col items-center w-full lg:my-16 bg-white ">
       <div className="flex justify-center items-center mb-6 mt-2 lg:hidden top-0 bottom-0">
-              <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
-            </div>
+        <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
+      </div>
       {/* Header Section */}
       <div className="text-center mb-10">
         <div className="text-[#0083b3] md:block hidden text-2xl font-normal font-['Poppins'] uppercase leading-5 tracking-[4.76px]">

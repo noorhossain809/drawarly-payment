@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const PaymentMethod = () => {
@@ -18,17 +18,19 @@ const PaymentMethod = () => {
             src="/src/assets/Electricity, Air conditioning and Elevators/back arrow.svg"
             alt="Back"
           />
-          <h1 className="text-black text-lg font-medium ">
+          <h1 className="text-black text-lg font-medium font-['Poppins']">
             Payment Method
           </h1>
         </div>
 
         {/* Payment Methods */}
-        <div className="space-y-6 mb-12 w-full">
+        <div className="space-y-6 mb-12 w-full ">
           {/* Knet Option */}
           <div
             className={`flex items-center justify-between w-full p-4 rounded-[3px] border cursor-pointer ${
-              selectedMethod === "Knet" ? "border-[#0083b3]" : "border-[#dfdfdf]"
+              selectedMethod === "Knet"
+                ? "border-[#0083b3]"
+                : "border-[#dfdfdf]"
             }`}
             onClick={() => setSelectedMethod("Knet")}
           >
@@ -38,7 +40,7 @@ const PaymentMethod = () => {
                 <h2 className="text-[#161616] text-xs font-medium  leading-[21px]">
                   Knet
                 </h2>
-                <p className="text-neutral-500 text-[10px] font-normal font-['Inter'] leading-[21px]">
+                <p className="text-neutral-500 text-[10px] font-normal font-['Poppins'] leading-[21px]">
                   Accepts all local Cards
                 </p>
               </div>
@@ -65,7 +67,7 @@ const PaymentMethod = () => {
                 <h2 className="text-[#161616] text-xs font-medium  leading-[21px]">
                   Apple Pay
                 </h2>
-                <p className="text-neutral-500 text-[10px] font-normal font-['Inter'] leading-[21px]">
+                <p className="text-neutral-500 text-[10px] font-normal font-['Poppins'] leading-[21px]">
                   Accepts all Debit & Credit Cards
                 </p>
               </div>
@@ -84,7 +86,7 @@ const PaymentMethod = () => {
         {/* Pay Button */}
         <button
           onClick={handlePayment}
-          className="w-full h-14 bg-[#0083b3] rounded-[30px] text-white text-xl font-medium font-['Inter']"
+          className="w-full h-14 bg-[#0083b3] rounded-[30px] text-white text-xl font-medium font-['Poppins']"
         >
           Pay
         </button>

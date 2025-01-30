@@ -1,77 +1,100 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import mobileLogo from "../../assets/logo/mobile-logo-2.svg";
+import { useNavigate } from "react-router-dom";
 
 const SubscriptionPlan = () => {
+  const [selectedPlan, setSelectedPlan] = useState(null);
   const navigate = useNavigate();
+
+  const handlePlanClick = (plan) => {
+    setSelectedPlan(plan);
+  };
+
+  const handleCheckout = () => {
+    navigate("/payment-method");
+  };
 
   return (
     <div className="h-screen">
       <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
-                                <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
-                              </div>
+        <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
+      </div>
       <div className="flex justify-center items-center">
-      
-      <div className="w-[428px] p-6">
-        {/* Header */}
-        <div className="mb-8"></div>
+        <div className="w-[428px] p-6">
+          {/* Header */}
+          <div className="mb-8"></div>
 
-        {/* Subscription Plans Section */}
-        <div className="mb-12">
-          <h1 className="text-black text-lg font-medium ">
-            Subscription plans
-          </h1>
-          <p className="text-black text-sm font-normal  mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-            amet, consectetur.
-          </p>
-        </div>
+          {/* Subscription Plans Section */}
+          <div className="mb-12">
+            <h1 className="text-black text-lg font-medium font-['Poppins']">
+              Subscription plans
+            </h1>
+            <p className="text-black text-sm font-normal font-['Poppins'] mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+              dolor sit amet, consectetur.
+            </p>
+          </div>
 
-        {/* Plans */}
-        <div className="space-y-6">
-          {/* Plan 1 */}
-          <div className="relative border border-[#0083b3] rounded-lg overflow-hidden">
-            <div className="bg-[#0083b3] text-white p-4 text-base font-medium ">
-              Choose Your Plan
-            </div>
-            <div className="p-4">
-              <div className="text-black text-lg font-semibold ">
-                KD 10.00
+          {/* Plans */}
+          <div className="space-y-6 font-['Poppins']">
+            {/* Plan 1 */}
+            <div className={`relative cursor-pointer border-[#0083b3]`}>
+              <div className="bg-[#0083b3] rounded-t-md text-white p-4 text-base font-medium">
+                Choose Your Plan
               </div>
-              <p className="text-black text-[10px] font-normal ">
-                1 year. Billed yearly
-              </p>
-              <div className="absolute right-4 top-4 bg-[#ffb700] text-white px-2 py-1 rounded-full text-[10px] font-semibold ">
+              <div className="absolute right-4 top-4 bg-[#ffb700] text-white px-2 py-1 rounded-full text-[10px] font-semibold">
                 Save 75%
               </div>
-            </div>
-          </div>
-
-          {/* Plan 2 */}
-          <div className="relative border border-[#0083b3] rounded-lg overflow-hidden">
-            <div className="p-4">
-              <div className="text-black text-lg font-semibold ">
-                KD 6.00
+              <div
+                className={`p-4 border rounded-b-md ${
+                  selectedPlan === "1-year-plan"
+                    ? "border-red-500"
+                    : "border-[#0083b3]"
+                }`}
+                onClick={() => handlePlanClick("1-year-plan")}
+              >
+                <div className="text-black text-lg font-semibold">KD 10.00</div>
+                <p className="text-black text-[10px] font-normal">
+                  1 year. Billed yearly
+                </p>
               </div>
-              <p className="text-black text-[10px] font-normal ">
-                6 month. Billed yearly
-              </p>
+            </div>
+
+            {/* Plan 2 */}
+            <div
+              className={`relative border rounded-lg overflow-hidden cursor-pointer ${
+                selectedPlan === "6-month-plan"
+                  ? "border-red-500"
+                  : "border-[#0083b3]"
+              }`}
+              onClick={() => handlePlanClick("6-month-plan")}
+            >
+              <div className="p-4">
+                <div className="text-black text-lg font-semibold">KD 6.00</div>
+                <p className="text-black text-[10px] font-normal">
+                  6 months. Billed yearly
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Checkout Button */}
-        <div className="mt-12">
-          <button
-            onClick={() => navigate("/paymentMethod")}
-            className="w-full h-14 bg-[#0083b3] text-white text-base font-semibold rounded-[40px] tracking-wider"
-          >
-            Check Out
-          </button>
+          {/* Checkout Button */}
+          <div className="mt-12">
+            <button
+              disabled={!selectedPlan}
+              className={`w-full h-14 ${
+                selectedPlan
+                  ? "bg-[#0083b3] text-white"
+                  : "bg-gray-300 text-gray-500"
+              } text-base font-semibold rounded-[40px] tracking-wider`}
+              onClick={handleCheckout} // Corrected function invocation
+            >
+              {selectedPlan ? "Proceed to Checkout" : "Select a Plan"}
+            </button>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

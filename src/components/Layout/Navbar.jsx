@@ -156,11 +156,11 @@ export default function Header() {
           <div className="flex md:flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className=" hidden md:block shrink-0 items-center">
               <Link to="/">
-              <img alt="Your Company" src={logo} className="h-8 w-auto" />
+                <img alt="Your Company" src={logo} className="h-8 w-auto" />
               </Link>
             </div>
           </div>
-          
+
           <div className="flex space-x-4">
             <div className="hidden sm:ml-6 sm:block">
               {navigation.map((item) => (
@@ -170,20 +170,19 @@ export default function Header() {
                   aria-current={item.current ? "page" : undefined}
                   className="text-[#222222] hover:text-[#0083B3] transition uppercase
                       rounded-md px-3 py-2 text-sm font-medium tracking-wide"
-                      style={{fontFamily: 'Poppins'}}
+                  style={{ fontFamily: "Poppins" }}
                 >
                   {item.name}
                 </a>
               ))}
             </div>
             <Link to="verification">
-            <button 
-            className="md:block hidden px-8 cursor-pointer py-1 bg-[#0083B3] text-white rounded-full hover:text-white"
-            style={{fontFamily: 'Poppins'}}
-            >
-              
-              Login
-            </button>
+              <button
+                className="md:block hidden px-8 cursor-pointer py-1 bg-[#0083B3] text-white rounded-full hover:text-white"
+                style={{ fontFamily: "Poppins" }}
+              >
+                Login
+              </button>
             </Link>
             {/* Mobile menu button*/}
             {/* <div className=" inset-y-0 left-0 flex items-center sm:hidden">

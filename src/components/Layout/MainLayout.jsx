@@ -1,8 +1,8 @@
-import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import { Outlet } from 'react-router-dom';
-import BottomNavbar from './MobileNavbar';
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
+import BottomNavbar from "./MobileNavbar";
 
 const MainLayout = () => {
   return (
