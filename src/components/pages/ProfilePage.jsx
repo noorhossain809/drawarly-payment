@@ -59,7 +59,7 @@ const ProfilePage = () => {
         </div>
 
         <div className="md:hidden block">
-          <div className=" p-2 bg-white rounded-lg border text-sm border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-4">
+          <div className=" p-2 bg-white rounded-lg border text-sm border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-9">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -69,10 +69,10 @@ const ProfilePage = () => {
             </p>
 
             <div className="flex gap-3 mb-2">
-              <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+              <div className="p-1 bg-white shadow-sm rounded-full flex justify-center items-center">
                 <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
               </div>
-              <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+              <div className="w-9 h-9 bg-white shadow-sm rounded-full flex justify-center items-center">
                 <img src={call} alt="call" className="w-4 h-4" />
               </div>
             </div>
@@ -132,10 +132,10 @@ const ProfilePage = () => {
                 {electrician.description}
               </p>
               <div className="flex lg:gap-4 gap-2 mt-4">
-                <div className="p-1 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                <div className="p-1 bg-white shadow-sm rounded-full flex justify-center items-center">
                   <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
                 </div>
-                <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">
+                <div className="w-9 h-9 bg-white shadow-sm rounded-full flex justify-center items-center">
                   <img src={call} alt="call" className="w-4 h-4" />
                 </div>
                 {/* <div className="w-9 h-9 bg-[#e8f9ff] rounded-full flex justify-center items-center">

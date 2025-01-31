@@ -225,7 +225,7 @@ const Signup = () => {
           {/* Submit Button */}
           <button
             onClick={handleRegistration}
-            className="w-full px-4 py-2 bg-[#0083b3] text-white rounded-lg text-base font-semibold font-['Poppins'] leading-normal"
+            className="w-full px-4 py-2 bg-[#0083b3] text-white rounded-full text-base font-semibold font-['Poppins'] leading-normal"
           >
             Registration
           </button>

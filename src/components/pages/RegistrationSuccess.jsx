@@ -13,8 +13,8 @@ const RegistrationSuccess = () => {
   }, [navigate]);
   return (
     <div>
-      <div className="flex items-center justify-center h-screen bg-gray-100">
-        <div className="text-center p-8 bg-white rounded-lg shadow-md max-w-sm">
+      <div className="flex items-center justify-center h-screen">
+        <div className="text-center p-8 bg-white rounded-lg max-w-sm">
           <h1 className="text-2xl font-bold text-black mb-4">Success!</h1>
           <p className="text-lg font-semibold text-gray-800">
             Thanks for Registration

@@ -19,7 +19,7 @@ const SubscriptionPlan = () => {
       <div className="flex justify-center items-center mb-10 md:hidden top-0 bottom-0">
         <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center pb-16">
         <div className="w-[428px] p-6">
           {/* Header */}
           <div className="mb-8"></div>
@@ -49,7 +49,7 @@ const SubscriptionPlan = () => {
               <div
                 className={`p-4 border rounded-b-md ${
                   selectedPlan === "1-year-plan"
-                    ? "border-red-500"
+                    ? "border-[#0083b3] border-2"
                     : "border-[#0083b3]"
                 }`}
                 onClick={() => handlePlanClick("1-year-plan")}
@@ -65,7 +65,7 @@ const SubscriptionPlan = () => {
             <div
               className={`relative border rounded-lg overflow-hidden cursor-pointer ${
                 selectedPlan === "6-month-plan"
-                  ? "border-red-500"
+                  ? "border-[#0083b3] border-2"
                   : "border-[#0083b3]"
               }`}
               onClick={() => handlePlanClick("6-month-plan")}
@@ -80,10 +80,10 @@ const SubscriptionPlan = () => {
           </div>
 
           {/* Checkout Button */}
-          <div className="mt-12">
+          <div className="mt-6 mb-6">
             <button
               disabled={!selectedPlan}
-              className={`w-full h-14 ${
+              className={`w-full py-3 ${
                 selectedPlan
                   ? "bg-[#0083b3] text-white"
                   : "bg-gray-300 text-gray-500"

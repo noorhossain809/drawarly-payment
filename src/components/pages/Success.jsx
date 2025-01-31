@@ -18,7 +18,7 @@ const Success = () => {
         <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
       </div>
       <div className="flex flex-col items-center justify-center min-h-[90vh] text-center">
-        <div className="p-6 bg-white rounded-lg shadow-md md:mx-0 mx-6">
+        <div className="p-6 md:mx-0 mx-6">
           <h1 className="text-3xl font-bold text-[#0083B3]">Success!</h1>
           <div className="my-4">
             <svg
