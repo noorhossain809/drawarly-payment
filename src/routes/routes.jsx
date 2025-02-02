@@ -13,6 +13,8 @@ import SubscriptionPlan from "../components/pages/SubscriptionPlan";
 import PaymentMethod from "../components/pages/PaymentMethod";
 import PaymentSuccess from "../components/pages/PaymentSuccess";
 import RegistrationSuccess from "../components/pages/RegistrationSuccess";
+import Contact from "../components/pages/Contact";
+import About from "../components/pages/About";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +48,14 @@ const router = createBrowserRouter([
       {
         path: "/success",
         element: <Success></Success>, // Home is the default component
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/about',
+        element: <About />
       },
       {
         path: "/profilePage",
