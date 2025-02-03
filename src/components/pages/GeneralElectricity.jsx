@@ -93,12 +93,19 @@ const GeneralElectricity = () => {
             <p className="mt-2 text-black text-xs font-normal text-center leading-tight md:px-4 px-1">
               {electrician.description}
             </p>
-            <div className="flex gap-4 mt-4">
-              <div className=" lg:p-2 p-1 bg-white rounded-full shadow-sm flex justify-center items-center">
+            <div className="flex gap-2 mt-4">
+              {/* <div className=" lg:p-2 p-1 bg-white rounded-full shadow-sm flex justify-center items-center">
                 <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
               </div>
               <div className="lg:p-2 p-1 bg-white rounded-full shadow-sm flex justify-center items-center">
                 <img src={call} alt="Phone" className="w-5 h-5" />
+              </div> */}
+
+              <div className="p-1 bg-white shadow-sm rounded-full flex justify-center items-center">
+                <img src={whatsapp} alt="WhatsApp" className="w-7 h-7" />
+              </div>
+              <div className="w-9 h-9 bg-white shadow-sm rounded-full flex justify-center items-center">
+                <img src={call} alt="call" className="w-4 h-4" />
               </div>
             </div>
             <button className="mt-6 px-5 py-1 bg-[#0083b3] text-white text-sm font-medium rounded-[100px]">
