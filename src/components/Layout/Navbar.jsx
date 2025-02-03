@@ -32,7 +32,7 @@ export default function Header() {
 
           <div className="flex space-x-4">
             <div className="hidden sm:ml-6 sm:block">
-              {navigation.map((item) => (
+              {/* {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
@@ -43,7 +43,34 @@ export default function Header() {
                 >
                   {item.name}
                 </a>
-              ))}
+              ))} */}
+              <Link to="/">
+                <button
+                  className="text-[#222222] hover:text-[#0083B3] transition uppercase cursor-pointer
+                      rounded-md px-3 py-2 text-sm font-medium tracking-wide"
+                  style={{ fontFamily: "Poppins" }}
+                >
+                  Home
+                </button>
+              </Link>
+              <Link to="contact">
+                <button
+                  className="text-[#222222] hover:text-[#0083B3] transition uppercase cursor-pointer
+                      rounded-md px-3 py-2 text-sm font-medium tracking-wide"
+                  style={{ fontFamily: "Poppins" }}
+                >
+                  Contact
+                </button>
+              </Link>
+              <Link to="about">
+                <button
+                  className="text-[#222222] hover:text-[#0083B3] transition uppercase cursor-pointer
+                      rounded-md px-3 py-2 text-sm font-medium tracking-wide"
+                  style={{ fontFamily: "Poppins" }}
+                >
+                  About
+                </button>
+              </Link>
             </div>
             <Link to="verification">
               <button
