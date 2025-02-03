@@ -15,7 +15,7 @@ const Verifying = () => {
         }
         return prev + 5; // Increase progress gradually
       });
-    }, 500); // Update progress every 500ms
+    }, 200); // Update progress every 500ms
 
     return () => clearInterval(interval);
   }, []);

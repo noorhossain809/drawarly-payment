@@ -34,7 +34,7 @@ const ProfilePage = () => {
         <img src={mobileLogo} alt="mobileLogo" className="w-24 h-24" />
       </div>
       {/* Section 1 */}
-      <div className=" bg-white flex flex-col lg:flex-row justify-center items-center lg:gap-8 gap-4 mx-4">
+      <div className=" bg-white flex flex-col lg:flex-row justify-center items-center lg:gap-8 gap-4 md:mx-4 ">
         {/* Left Profile Card */}
         <div className=" py-8 bg-white rounded-lg border border-[#dbdbdb] flex flex-col justify-center items-center space-y-6">
           <div className="">
@@ -59,7 +59,7 @@ const ProfilePage = () => {
         </div>
 
         <div className="md:hidden block">
-          <div className=" p-2 bg-white rounded-lg border text-sm border-[#dbdbdb] flex flex-col justify-center items-center space-y-6 mx-9">
+          <div className="w-[310px] p-2 bg-white rounded-lg border text-sm border-[#dbdbdb] flex flex-col justify-center items-center space-y-6">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
