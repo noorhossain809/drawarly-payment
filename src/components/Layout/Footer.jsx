@@ -33,7 +33,7 @@ const Footer = () => {
             </h4>
             <p className="text-gray-600 text-sm flex justify-start items-center mb-4">
               <img src={location} alt="Address Icon" className="mr-3 w-5 h-5" />
-              13 Whittingehame Drive, <br /> Glasgow, G12 0XT
+              Jahra-saadalbdullah, Block-3
             </p>
             <p className="text-gray-600 text-sm flex justify-start items-center mb-4">
               <img src={call} alt="Phone Icon" className="mr-3 w-5 h-5" />
