@@ -37,7 +37,7 @@ const Footer = () => {
             </p>
             <p className="text-gray-600 text-sm flex justify-start items-center mb-4">
               <img src={call} alt="Phone Icon" className="mr-3 w-5 h-5" />
-              +1 45278 540
+              0096555320323
             </p>
             <p className="text-gray-600 text-sm flex justify-center lg:justify-start items-center mb-4">
               <img src={mail} alt="Email Icon" className="mr-3 w-5 h-5" />
